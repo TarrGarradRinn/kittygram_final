@@ -1,4 +1,4 @@
 repo_owner: TarrGarradRinn
-kittygram_domain: https://localhost
-taski_domain: https://localhost
+kittygram_domain: http://77.94.203.230:9010/
+taski_domain: http://77.94.203.230:9009/
 dockerhub_username: tarrgarrad
