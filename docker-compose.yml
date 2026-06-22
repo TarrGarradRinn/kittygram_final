@@ -24,10 +24,11 @@ services:
     volumes:
       - static:/static
   gateway:
-    build: ./nginx/
-    env_file: .env
-    ports:
-      - 9010:80
-    volumes:
-      - static:/static
-      - media:/media
+  build: ./nginx/
+  ports:
+    - 9010:443
+    - 80:80
+  volumes:
+    - static:/static
+    - media:/media
+    - /etc/letsencrypt:/etc/letsencrypt:ro
